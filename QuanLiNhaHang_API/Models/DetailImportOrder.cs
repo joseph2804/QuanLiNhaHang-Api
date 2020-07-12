@@ -10,11 +10,10 @@ namespace QuanLiNhaHang_API.Models
     [Table("DetailImportOrders")]
     public class DetailImportOrder
     {
-        public int Id { get; set; }
         [Key]
-        public string DeImp_Id { get; set; }
-        public string Pro_Id { get; set; }
-        public string Imp_Id { get; set; }
+        public int Id { get; set; }
+        public int Pro_Id { get; set; }
+        public int Imp_Id { get; set; }
         [Column("DeImp_Quantity")]
         public int Quantity { get; set; }
         [Column("DeImp_Price")]

@@ -10,9 +10,9 @@ namespace QuanLiNhaHang_API.Models
     [Table("Employees")]
     public class Employee
     {
-        public int Id { get; set; }
+
         [Key]
-        public string Epl_Id { get; set; }
+        public int Id { get; set; }
         [Column("Epl_FirstName")]
         public string FirstName { get; set; }
         [Column("Epl_LastName")]

@@ -21,7 +21,22 @@ namespace QuanLiNhaHang_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Food>>> Get()
         {
-            return await _db.Foods.ToListAsync();
+            return await _db.Foods  
+                         .Include(f => f.Type) 
+                         .ToListAsync();
+        }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Food>> Get(long id)
+        {
+            var food = await _db.Foods.Where(f => f.Id == id)
+                                      .FirstOrDefaultAsync();
+
+            if (food == null)
+            {
+                return NoContent();
+            }
+
+            return food;
         }
     }
 }

@@ -10,12 +10,11 @@ namespace QuanLiNhaHang_API.Models
     [Table("Products")]
     public class Product
     {
-      
-        public int Id { get; set; }
         [Key]
-        public string Pro_Id { get; set; }
+
+        public int Id { get; set; }
         public string Pro_Name { get; set; }
-        public int Pro_Price { get; set; }
+        public double Pro_Price { get; set; }
         [Column("Pro_Quantity")]
         public int Quantity { get; set; }
         public string Pro_Unit { get; set; }

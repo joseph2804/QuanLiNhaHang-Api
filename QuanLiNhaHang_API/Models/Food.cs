@@ -10,14 +10,13 @@ namespace QuanLiNhaHang_API.Models
     [Table("Foods")]
     public class Food
     {
-        
-        public int Id { get; set; }
         [Key]
+        public int Id { get; set; }
         public string Foo_Id { get; set; }
-        public string EPL_Id { get; set; }
-        public string Ty_Id { get; set; }
+        public int EPL_Id { get; set; }
+        public int Ty_Id { get; set; }
         public string Foo_Name { get; set; }
-        public int Foo_Price { get; set; }
+        public double Foo_Price { get; set; }
         [ForeignKey("Epl_Id")]
         public virtual Employee Employee { get; set; }
         [ForeignKey("Ty_Id")]

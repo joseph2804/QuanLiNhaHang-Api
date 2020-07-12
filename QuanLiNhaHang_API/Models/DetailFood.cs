@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace QuanLiNhaHang_API.Models
 {
-    [Table("DETAILFOODS")]
+    [Table("DetailFoods")]
     public class DetailFood
     {
-        public int Id { get; set; }
         [Key]
-        public string DeFood_Id { get; set; }
-        public string Pro_Id { get; set; }
-        public string Foo_Id { get; set; }
+        public int Id { get; set; }
+        public int Pro_Id { get; set; }
+        public int Foo_Id { get; set; }
         [Column("DEFOO_QUANTITY")]
         public int Quantity { get; set; }
         [ForeignKey("Foo_Id")]

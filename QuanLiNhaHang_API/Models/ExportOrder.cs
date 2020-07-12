@@ -10,11 +10,10 @@ namespace QuanLiNhaHang_API.Models
     [Table("ExportOrders")]
     public class ExportOrder
     {
-        public int Id { get; set; }
         [Key]
-        public string Exp_Id { get; set; }
-        public string Epl_Id { get; set; }
-        public string Tab_Id { get; set; }
+        public int Id { get; set; }
+        public int Epl_Id { get; set; }
+        public int Tab_Id { get; set; }
         [Column("Exp_Discount")]
         public int Discount { get; set; }
         public DateTime Exp_Date { get; set; }

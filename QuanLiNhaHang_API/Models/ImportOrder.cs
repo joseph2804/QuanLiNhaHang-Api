@@ -10,11 +10,10 @@ namespace QuanLiNhaHang_API.Models
     [Table("ImportOrders")]
     public class ImportOrder
     {
-        public int Id { get; set; }
         [Key]
-        public string Imp_Id { get; set; }
-        public string Epl_Id { get; set; }
-        public string Sup_Id { get; set; }
+        public int Id { get; set; }
+        public int Epl_Id { get; set; }
+        public int Sup_Id { get; set; }
         public DateTime Imp_Date { get; set; }
         [ForeignKey("Sup_Id")]
         public virtual Supplier Supplier { get; set; }

@@ -10,10 +10,10 @@ namespace QuanLiNhaHang_API.Models
     [Table("Tables")]
     public class Table
     {
-        public int Id { get; set; }
         [Key]
-        public string Tab_Id { get; set; }
-        public string Epl_Id { get; set; }
+        public int Id { get; set; }
+        public int Epl_Id { get; set; }
+        public bool Tab_Status { get; set; }
         [ForeignKey("Epl_Id")]
         public virtual Employee Employee { get; set; }
         public virtual ICollection<ExportOrder> ExportOrders { get; set; }
