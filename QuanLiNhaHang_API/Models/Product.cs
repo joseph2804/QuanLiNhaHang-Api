@@ -11,7 +11,6 @@ namespace QuanLiNhaHang_API.Models
     public class Product
     {
         [Key]
-
         public int Id { get; set; }
         public string Pro_Name { get; set; }
         public double Pro_Price { get; set; }
@@ -19,7 +18,7 @@ namespace QuanLiNhaHang_API.Models
         public int Quantity { get; set; }
         public string Pro_Unit { get; set; }
         public virtual  ICollection<DetailFood> DetailFoods { get; set; }
-        public virtual ICollection<DetailExportOrder> DetailExportOrders { get; set; }
+        public virtual ICollection<DetailImportOrder> DetailImportOrders { get; set; }
 
     }
 }

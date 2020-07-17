@@ -50,6 +50,8 @@ namespace QuanLiNhaHang_API.Controllers
             var time = new CurrentTime
             {
                 timeNow = mydat
+                //có múi giờ zzz
+                //timeNow = mydat.ToString("dd/MM/yyyy H:mm:ss zzz")
             };
 
             if (time == null)

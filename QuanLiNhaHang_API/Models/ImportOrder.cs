@@ -19,6 +19,6 @@ namespace QuanLiNhaHang_API.Models
         public virtual Supplier Supplier { get; set; }
         [ForeignKey("Epl_Id")]
         public virtual Employee Employee { get; set; }
-        public virtual ICollection<DetailExportOrder> DetailExportOrders { get; set; }
+        public virtual ICollection<DetailImportOrder> DetailImportOrders { get; set; }
     }
 }
