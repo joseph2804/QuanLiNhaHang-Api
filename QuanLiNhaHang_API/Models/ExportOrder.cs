@@ -17,6 +17,7 @@ namespace QuanLiNhaHang_API.Models
         [Column("Exp_Discount")]
         public double Discount { get; set; }
         public DateTime Exp_Date { get; set; }
+        public double Exp_Total { get; set; }
         public int Exp_Status { get; set; }
         [ForeignKey("Tab_Id")]
         public virtual Table Table { get; set; }
