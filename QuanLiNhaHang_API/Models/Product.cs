@@ -16,10 +16,11 @@ namespace QuanLiNhaHang_API.Models
         public string Pro_Name { get; set; }
         public double Pro_Price { get; set; }
         [Column("Pro_Quantity")]
-        public int Quantity { get; set; }
+        public double Quantity { get; set; }
         public string Pro_Unit { get; set; }
+        public bool Pro_Type { get; set; }
         public virtual  ICollection<DetailFood> DetailFoods { get; set; }
-        public virtual ICollection<DetailExportOrder> DetailExportOrders { get; set; }
+        public virtual ICollection<DetailImportOrder> DetailImportOrders { get; set; }
 
     }
 }

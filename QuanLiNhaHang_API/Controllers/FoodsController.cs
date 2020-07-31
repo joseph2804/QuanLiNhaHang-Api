@@ -60,6 +60,43 @@ namespace QuanLiNhaHang_API.Controllers
             return time;
         }
 
+        [HttpPost]
+        public async Task<ActionResult<Food>> PostFood(Food food)
+        {
+            _db.Foods.Add(food);
+            await _db.SaveChangesAsync();
 
+            return CreatedAtAction("Get", new { id = food.Id }, food);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Food>> putFoods(int id, Food food)
+        {
+            var food1 = await _db.Foods.FindAsync(id);
+            if (food1 == null)
+            {
+                return NotFound();
+            }
+
+            food1.Foo_Name = food.Foo_Name;
+            food1.Ty_Id = food.Ty_Id;
+            food1.Foo_Id = food.Foo_Id;
+            food1.Foo_Price = food.Foo_Price;
+            food1.Foo_Status = food.Foo_Status;
+
+            _db.Foods.Update(food1);
+            await _db.SaveChangesAsync();
+
+            return food;
+
+        }
+
+        [HttpGet("search")]
+        public async Task<ActionResult<IEnumerable<Food>>> search([FromQuery] string st)
+        {
+            return await _db.Foods.AsNoTracking()
+                .Where(t => t.Foo_Name.Contains(st))
+                .ToListAsync();
+        }
     }
 }

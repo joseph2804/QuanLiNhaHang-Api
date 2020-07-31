@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\onJob\\QuanLiNhaHang_API\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj": {}
+    "D:\\Hiepkt\\ISC_QuangTrung\\On_Jod_traning\\QuanLyNhaHang\\QuanLiNhaHang-Api\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj": {}
   },
   "projects": {
-    "E:\\onJob\\QuanLiNhaHang_API\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj": {
+    "D:\\Hiepkt\\ISC_QuangTrung\\On_Jod_traning\\QuanLyNhaHang\\QuanLiNhaHang-Api\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\onJob\\QuanLiNhaHang_API\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj",
+        "projectUniqueName": "D:\\Hiepkt\\ISC_QuangTrung\\On_Jod_traning\\QuanLyNhaHang\\QuanLiNhaHang-Api\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj",
         "projectName": "QuanLiNhaHang_API",
-        "projectPath": "E:\\onJob\\QuanLiNhaHang_API\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj",
-        "packagesPath": "C:\\Users\\ANONYMOUS\\.nuget\\packages\\",
-        "outputPath": "E:\\onJob\\QuanLiNhaHang_API\\QuanLiNhaHang_API\\obj\\",
+        "projectPath": "D:\\Hiepkt\\ISC_QuangTrung\\On_Jod_traning\\QuanLyNhaHang\\QuanLiNhaHang-Api\\QuanLiNhaHang_API\\QuanLiNhaHang_API.csproj",
+        "packagesPath": "C:\\Users\\WIN 10\\.nuget\\packages\\",
+        "outputPath": "D:\\Hiepkt\\ISC_QuangTrung\\On_Jod_traning\\QuanLyNhaHang\\QuanLiNhaHang-Api\\QuanLiNhaHang_API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ANONYMOUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +45,20 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             }
           },
           "imports": [

@@ -15,12 +15,11 @@ namespace QuanLiNhaHang_API.Models
         public int  Exp_Id { get; set; }
         public int Foo_Id { get; set; }
         [Column("DeExp_Quantity")]
-        public int Quantity { get; set; }
+        public double Quantity { get; set; }
         public int DeExp_Status { get; set; }
         [ForeignKey("Foo_Id")]
         public virtual Food Food { get; set; }
         [ForeignKey("Exp_Id")]
         public virtual ExportOrder ExportOrder { get; set; }
-
     }
 }

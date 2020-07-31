@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using QuanLiNhaHang_API.Models;
 
 namespace QuanLiNhaHang_API.Models
 {
@@ -20,6 +21,7 @@ namespace QuanLiNhaHang_API.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Table> Tables { get; set; }
+        public DbSet<Type> Types { get; set; } 
 
     }
 }
